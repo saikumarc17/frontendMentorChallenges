@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center bg main">
+
+    <div class="my-auto card p-4" *ngIf="thankyoustatus===false" >
+        <div> <img class="shadow p-3 starradius" src="../../assets/icon-star.svg" alt=""> </div>
+        <h4 class="text-white mx-1 my-3">How did we do?</h4>
+        <div>
+            <p class="text-secoundry mx-1 ptext"> Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        </div>
+        <div class="d-flex justify-content-center numbercolor">
+            <span (click)="getrating(1)" class="starradius shadow px-4 py-3  mr-auto"  [ngClass]="{'orange':1 == rating ,'selected': 1 == rating-1 }" >1</span>
+            <span (click)="getrating(2)" class="starradius shadow px-4 py-3  mx-auto"  [ngClass]="{'orange':2 == rating ,'selected': 2 == rating-1}">2</span>
+            <span (click)="getrating(3)" class="starradius shadow px-4 py-3  mx-auto" [ngClass]="{'orange': 3 == rating ,'selected': 3 == rating-1}" >3</span>
+            <span (click)="getrating(4)" class="starradius shadow px-4 py-3  mx-auto" [ngClass]="{'orange': 4 == rating ,'selected': 4 == rating-1}" >4</span>
+            <span (click)="getrating(5)" class="starradius shadow px-4 py-3  ml-auto" [ngClass]="{'orange': 5 == rating }" >5</span>
+        </div>
+        <button class="btn mt-4 submit text-white orange"  [disabled]="rating <=0" (click)="submit()" >Submit</button>
+    </div>
+
+    <div class="my-auto card p-4"  *ngIf="thankyoustatus===true" >
+        
+        <img src="../../assets/illustration-thank-you.svg" class="mx-auto my-3" alt="" srcset="">
+        <div class="mx-auto my-2" >
+            <span class="orange-text px-3 py-1"> You selected {{rating}} out of 5 </span>
+        </div>
+        <!-- Thank you! -->
+        <h4 class="text-white mx-auto my-3">Thank you!</h4>
+        <div>
+            <p class="text-secoundry mx-1 ptext thankyou"> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+

@@ -1,0 +1,64 @@
+
+.main{
+    height: 100vh;
+}
+
+.bg{
+    background-color:#141519;
+}
+
+.card{
+    background-color:#212832;
+    width: 375px;
+    height: 375px;
+    border-radius: 30px;
+}
+
+.starradius{
+    background-color: #262f3a;
+    border-radius: 50%;
+}
+
+
+.ptext{
+    color: #707781;
+}
+.numbercolor{
+color: #747d86;
+}
+
+.numbercolor  .starradius:hover{
+    background-color:#7c8896 ;
+    color: white;
+}
+.selected{
+background-color:#7c8896 ;
+color: white;
+}
+
+.orange{
+    background-color: #fc7613;
+    color: white;
+}
+
+
+.orange-text{
+    color: #c3773d;
+    font-size: 15px;
+    background-color: #262f3a;
+    border-radius:1.3rem;
+}
+
+.submit{   
+    border-radius: 1.3rem;
+}
+
+.submit:hover{
+    background-color: aliceblue;
+    color: #fc7613 !important;
+}
+
+.thankyou{
+    font-size: 14px;
+    text-align: center;
+}
